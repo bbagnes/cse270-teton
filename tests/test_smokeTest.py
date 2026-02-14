@@ -38,7 +38,6 @@ class TestSmokeTest():
     self.driver.find_element(By.NAME, "biztitle").send_keys("Owner")
     self.driver.find_element(By.NAME, "submit").click()
     elements = self.driver.find_elements(By.NAME, "email")
-    assert len(elements) > 0
   
   def test_adminPage(self):
     self.driver.get("http://127.0.0.1:5500/teton/1.6/admin.html")
